@@ -1,0 +1,1 @@
+INSERT INTO poems (author, content) VALUES ('松尾 芭蕉 (Matsuo Bashō)', E'First Line\nSecond line\nThirdLine');
