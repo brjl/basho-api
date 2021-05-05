@@ -24,8 +24,8 @@ db.connect(() => {
   console.log("connected to database");
 });
 
-app.get('*', (req, res) => {
-  res.send('Hi!');
+app.get("*", (req, res) => {
+  res.send("Hi!");
 });
 
 app.listen(port, () => {
