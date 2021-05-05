@@ -24,6 +24,13 @@ db.connect(() => {
   console.log("connected to database");
 });
 
+//Routes
+const haikuRoutes = require("./routes/haiku");
+
+//Mount routes
+app.use("/haiku", haikuRoutes(db));
+
+//Home
 app.get("*", (req, res) => {
   res.send("Hi!");
 });
