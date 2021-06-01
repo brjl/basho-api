@@ -7,6 +7,7 @@ module.exports = (db) => {
     db.query(query, [])
       .then((res) => {
         res.json(results.rows);
+        console.log(res)
         res.status(201).send("Success! Enjoy the haiku!");
       })
       .catch((err) => {

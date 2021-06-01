@@ -29,7 +29,7 @@ const haikuRoutes = require("./routes/haiku");
 
 //Mount routes
 app.use("/haiku", haikuRoutes(db));
-console.log("hello!")
+
 //Home
 app.get("*", (req, res) => {
   res.send("Hi!");
