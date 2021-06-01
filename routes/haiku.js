@@ -8,7 +8,6 @@ module.exports = (db) => {
     db.query(query, [])
       .then((results) => {
         res.json(results.rows);
-        console.log("result", res)
         res.status(201).send("Success! Enjoy the haiku!");
       })
       .catch((err) => {
