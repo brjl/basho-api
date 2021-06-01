@@ -12,7 +12,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.json());
-
 app.use(express.static("public"));
 
 //DB params
@@ -30,12 +29,12 @@ const haikuRoutes = require("./routes/haiku");
 
 //Mount routes
 app.use("/haiku", haikuRoutes(db));
-
+console.log("hello!")
 //Home
 app.get("*", (req, res) => {
   res.send("Hi!");
 });
 
-app.listen(port, () => {
-  console.log(`Server running on ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
