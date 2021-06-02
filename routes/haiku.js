@@ -8,7 +8,7 @@ module.exports = (db) => {
     db.query(query, [])
       .then((results) => {
         res.json(results.rows);
-        res.status(201).send("Success! Enjoy the haiku!");
+        //res.status(201).send("Success! Enjoy the haiku!");
       })
       .catch((err) => {
         res.status(500).json({ error: err.message });
