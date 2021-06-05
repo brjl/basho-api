@@ -13,7 +13,7 @@ Haiku are taken from [here.](https://gist.github.com/jeffThompson/fd0d5486b8e649
 
 ### How to use
 
-Make a GET request with your method of choice to (web address here) and you will receive a bunch of haiku.
+Make a GET request with your method of choice to https://basho-api.herokuapp.com/haiku and you will receive a bunch of haiku.
 
 Though the database entries are formatted correctly with line breaks, these won't translate directly into, say, your React front-end. In this case, use something along the lines of
 
