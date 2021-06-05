@@ -7,8 +7,7 @@ module.exports = (db) => {
     console.log("query", query)
     db.query(query, [])
       .then((results) => {
-        res.json(results.rows);
-        //res.status(201).send("Success! Enjoy the haiku!");
+        res.json(results.rows).status(201).send("Success! Enjoy the haiku!");
       })
       .catch((err) => {
         res.status(500).json({ error: err.message });
